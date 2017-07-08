@@ -1,0 +1,64 @@
+.xq{
+	width: 800px;
+	height: 500px;
+	background-color: #fff;
+	margin:auto;
+}
+.xq img{
+	width: 300px;
+	height: 200px;
+	background-color: blue;
+	display: block;
+	float: left;
+}
+.xq .js{
+	width: 450px;
+	height: 200px;
+	float: left;
+	margin-left:50px;
+}
+.js .title{
+	width: 450px;
+	height: 30px;
+	font-size: 23px;
+	color: #000;
+	text-align: center;
+}
+.js .jg{
+	width: 450px;
+	height: 30px;
+	font-size: 20px;
+	color: #000;
+	margin-top: 15px;
+}
+.js .sl{
+	width: 450px;
+	height: 30px;
+	font-size: 20px;
+	color: #000;
+	margin-top: 15px;
+}
+.ms{
+	clear: both;
+	width:800px;
+	height: 300px;
+	font-size: 18px;
+	color: #000;
+}
+.js .lianjie{
+	width: 150px;
+	height: 30px;
+	margin-left: 50px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 25px;
+	background-color: #6d55bd;
+	float: left;
+}
+a{
+	color: #fff;
+}
+a:hover{
+	color:#fff;
+}

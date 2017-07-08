@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<div class="modal fade tp" id="Login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  	<div class="modal-header">
+  		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  		<h4 class="modal-title ct" id="myModalLabel">欢迎登录</h4>
+  	</div>
+    <div class="modal-body">
+        	<form class="form-horizontal" role="form" method="post" action="user_log_in.php">
+        	<div class="form-group">
+        		<label for="inputEmail" class="col-sm-2 control-label">用户名</label>
+        		<div class="col-sm-10">
+        		<input type="text" name='uname' class="form-control" id="inputEmail" placeholder="用户名">
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+   				 <div class="col-sm-10">
+      			<input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
+    			</div>
+        	</div>
+        	<div class="form-group">
+        		<label for="inputPassword3" class="col-sm-2 control-label">验证码</label>
+   				 <div class="col-sm-10">
+      			<input type="text" class="form-control" id="inputPassword3" placeholder="验证码" name="yzm">
+    			</div>
+        	</div>
+        	<img src="yzm.php">
+        	<div class="form-group">
+    			<div class="col-sm-offset-2 col-sm-10">
+      			<div class="checkbox">
+       			<label class="f">
+         			 <input type="checkbox">记住我
+       			</label>
+       			<div class="ar">
+   				<a href="#">忘记密码</a>
+   				</div>
+      			</div>
+   				</div>
+ 			</div>
+  			<div class="form-group">
+    			<div class="col-sm-offset-2 col-sm-10">
+      			<button type="submit" class="btn btn-primary btn-lg btn-block">登录</button>
+    			</div>
+  			</div>
+        </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+		<!--注册模拟框-->
+<div class="modal fade tp" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+	<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-didden="true">
+					&times;
+				</button>
+				<h4 class="modal-title ct" id="myModalLabel">欢迎注册</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">用户名</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" placeholder="用户名">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">
+								手机号
+							</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" placeholder="mobile number">
+							</div>
+						</div>
+  						<div class="form-group">
+   							 <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    						<div class="col-sm-10">
+      							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    						</div>
+  						</div>
+  				<div class="form-group">
+    				<label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+    				<div class="col-sm-10">
+      					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    				</div>
+  				</div>
+  				<div class="form-group">
+  					<label class="col-sm-2 control-label">确认密码</label>
+  					<div class="col-sm-10">
+  						<input type="password" class="form-control" placeholder="Password">
+  					</div>
+  				</div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary btn-block">同意协议并注册</button>
+    </div>
+  </div>
+</form>
+
+</div>
+</div><!--header-->
+</div><!--content-->
+</div><!--dialog-->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" id="shangcheng">商城</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">分类</a></li>
+					<li><a href="#">购物车</a></li>
+					<li><a href="#">个人中心</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">搜索</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#Login">登录</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#signUp">注册</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="sct">
+		<img src="1.jpg">
+	</div>
+	<div class="sp">
+		<div class="rx"><div class="title"><h2>热销商品</h2></div>
+		<div class="kuang"><img src="">
+		<div class="ti"><a href="#">神舟电脑</a></div>
+		</div>
+		<div class="kuang"></div>
+		<div class="kuang"></div>
+		<div class="kuang"></div>
+		<div class="kuang"></div>
+		<div class="kuang"></div>
+		<div class="gd"><a href="#">更多商品</a></div>
+	</div>
+	<div class="dz"><div class="title"><h2>折扣商品</h2></div>
+	<div class="kuang"></div>
+	<div class="kuang"></div>
+	<div class="kuang"></div>
+	<div class="kuang"></div>
+	<div class="kuang"></div>
+	<div class="kuang"></div>
+	<div class="gd"><a href="#">更多商品</a></div>
+</div>
+</div>
+<div class="foot"></div>
+</body>
+</html>

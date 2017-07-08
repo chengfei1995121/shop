@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="htstyle.css">
+</head>
+<body>
+<div class="log">
+<form method="post" action="user_log_in.php" class="from">
+<div class="form-group">
+<label>用户名：</label>
+	<input type="text" name="uname" placeholder="user">
+	</div>
+	<div class="form-group">
+	<label>密码:</label>
+	<input type="password" name="password" class="from-control" placeholder="password">
+	</div>
+	<div class="form-group">
+	<input type="text" name="yzm" class="from-control" placeholder="验证码" style="width: 50px;">
+	<img src="yzm.php" style="margin-top: -10px; margin-left: 100px;">
+	</div>
+	<button type="submit" class="btn btn-primary" style="margin-left: 35px;">登录</button>
+	<button type="submit" class="btn btn-primary" style="margin-left: 35px;"><a href="user_sign.html" style="color: #fff;">注册</a></button>
+</form>
+</div>
+</body>
+</html>
